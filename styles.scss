@@ -1,0 +1,211 @@
+$veryDarkMagenta: hsl(300, 43%, 22%);
+$softPink: hsl(333, 80%, 67%);
+$darkGrayishMagenta: hsl(303, 10%, 53%);
+$lighGrayishMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+$fontSpartan: "League Spartan", sans-serif;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontSpartan;
+
+    
+    main {
+        width: min(95%, 375px);
+        text-align: center;
+        background-color: white;
+
+        .bg-pattern-top-mobile{
+            margin-bottom: -11rem;
+        }
+        .bg-pattern-top-desktop, .bg-pattern-bottom-desktop {
+            display: none;
+        }
+              
+
+        .about-us {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            h1 {
+                font-size: 2.5rem;
+                color: $veryDarkMagenta;
+                padding: 0 1rem 0 1rem;
+            }
+
+            p {
+                font-size: 1.188rem;
+                color: $darkGrayishMagenta;
+                padding: 0 1rem 0 1rem;
+            }
+
+            article {
+                background-color: $lighGrayishMagenta;
+                width: 327px;
+                height: 71px;
+                margin: 10px 0 10px 0;
+
+                svg {
+                    margin-bottom: -1rem;
+                }
+
+                p {
+                    color: $veryDarkMagenta;
+                    font-size: 1.063rem;
+                    font-weight: bold;
+                }
+    
+            }
+        }
+
+        .customer-review {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            article {
+                background-color: $veryDarkMagenta;
+                width: 327px;
+                height: 241px;
+                border-radius: 10px;
+                margin: 1rem 0 1rem 0;
+                padding: 1rem 2rem;
+
+                
+
+                .name {
+                    color: $white;
+                    margin-bottom: -1rem;
+                }
+
+                .buyer {
+                    color: $softPink;
+                }
+
+                .review {
+                    color: $white;
+                    line-height: 1.375rem;
+                    
+                }
+
+
+            }
+        }
+       
+
+    }
+
+    @media screen and (min-width: 1440px) {
+        main {
+            width: 1440px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .bg-pattern-top-mobile {
+                display: none;
+            }
+           
+
+            .bg-pattern-top-desktop {
+                display: block;
+                margin-bottom: -18rem;
+                margin-right: 55rem;
+            
+                
+            }
+
+            .bg-pattern-bottom-desktop {
+                display: block;
+                margin-top: -32rem;
+                margin-left: 20rem;
+            }
+
+           .about-us {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1110px;
+            
+
+            .about-us-text {
+                width: 445px;
+                height: 245px;
+                text-align: left;
+
+                h1 {
+                    font-size: 3.5rem;
+                    line-height: 3rem;
+                    margin-bottom: 1rem;
+                }
+                
+            }
+
+            .about-us-rating {
+                width: 540px;
+                height: 200px;
+                
+                
+
+                article {
+                    width: 445px;
+                    height: 56px;
+                    
+                }
+
+                .five-stars2{
+                    position: relative;
+                    left: 48px;
+                }
+
+                .five-stars3{
+                    position: relative;
+                    left: 90px;
+                }
+
+
+            }
+           }
+
+           .customer-review{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 1110px;
+            margin-top: 5rem;
+
+            .review2{
+
+                position: relative;
+                top: 2rem;
+                
+            }
+
+            .review3{
+
+                position: relative;
+                top: 4rem;
+                
+            }
+           }
+
+            
+
+
+        }
+        
+    }
+}

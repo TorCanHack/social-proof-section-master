@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+}
+body main {
+  width: min(95%, 375px);
+  text-align: center;
+  background-color: white;
+}
+body main .bg-pattern-top-mobile {
+  margin-bottom: -11rem;
+}
+body main .bg-pattern-top-desktop, body main .bg-pattern-bottom-desktop {
+  display: none;
+}
+body main .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .about-us h1 {
+  font-size: 2.5rem;
+  color: hsl(300, 43%, 22%);
+  padding: 0 1rem 0 1rem;
+}
+body main .about-us p {
+  font-size: 1.188rem;
+  color: hsl(303, 10%, 53%);
+  padding: 0 1rem 0 1rem;
+}
+body main .about-us article {
+  background-color: hsl(300, 24%, 96%);
+  width: 327px;
+  height: 71px;
+  margin: 10px 0 10px 0;
+}
+body main .about-us article svg {
+  margin-bottom: -1rem;
+}
+body main .about-us article p {
+  color: hsl(300, 43%, 22%);
+  font-size: 1.063rem;
+  font-weight: bold;
+}
+body main .customer-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .customer-review article {
+  background-color: hsl(300, 43%, 22%);
+  width: 327px;
+  height: 241px;
+  border-radius: 10px;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 2rem;
+}
+body main .customer-review article .name {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: -1rem;
+}
+body main .customer-review article .buyer {
+  color: hsl(333, 80%, 67%);
+}
+body main .customer-review article .review {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.375rem;
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .bg-pattern-top-mobile {
+    display: none;
+  }
+  body main .bg-pattern-top-desktop {
+    display: block;
+    margin-bottom: -18rem;
+    margin-right: 55rem;
+  }
+  body main .bg-pattern-bottom-desktop {
+    display: block;
+    margin-top: -32rem;
+    margin-left: 20rem;
+  }
+  body main .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1110px;
+  }
+  body main .about-us .about-us-text {
+    width: 445px;
+    height: 245px;
+    text-align: left;
+  }
+  body main .about-us .about-us-text h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  body main .about-us .about-us-rating {
+    width: 540px;
+    height: 200px;
+  }
+  body main .about-us .about-us-rating article {
+    width: 445px;
+    height: 56px;
+  }
+  body main .about-us .about-us-rating .five-stars2 {
+    position: relative;
+    left: 48px;
+  }
+  body main .about-us .about-us-rating .five-stars3 {
+    position: relative;
+    left: 90px;
+  }
+  body main .customer-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1110px;
+    margin-top: 5rem;
+  }
+  body main .customer-review .review2 {
+    position: relative;
+    top: 2rem;
+  }
+  body main .customer-review .review3 {
+    position: relative;
+    top: 4rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
