@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [solution URL](https://github.com/TorCanHack/social-proof-section-master)
-- [live site URL](https://torcanhack.github.io/social-proof-section-master/)
+- [live site URL](https://torcanhack.github.io/social-proof-section-master)
 
 ## My process
 

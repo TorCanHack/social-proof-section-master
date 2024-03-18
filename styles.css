@@ -61,6 +61,14 @@ body main .customer-review article {
   margin: 1rem 0 1rem 0;
   padding: 1rem 2rem;
 }
+body main .customer-review article img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  right: 5rem;
+  top: 3rem;
+}
 body main .customer-review article .name {
   color: hsl(0, 0%, 100%);
   margin-bottom: -1rem;
